@@ -35,7 +35,6 @@ vim.keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 vim.keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 vim.keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
-
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
@@ -52,7 +51,7 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
--- Press jk fast to exit insert mode 
+-- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
 
@@ -73,15 +72,15 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Neotree
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts) -- toggle file explorer
+keymap("n", "<leader>e", ":NvimTreeToggle guibg=NONE ctermbg=NONE<CR>", opts) -- toggle file explorer
 keymap("n", "<leader>o", ":NvimTreeFocus<CR>", opts) -- focus file explorer
 
 -- greatest remap ever
 keymap("v", "p", '"_dP', opts) -- not sure of exact difference with <leader>p
-vim.keymap.set("x", "<leader>p", "\"_dP")
+vim.keymap.set("x", "<leader>p", '"_dP')
 
 -- make current file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- toggleterm launch
-keymap("n","<C-t>i",":ToggleTerm size=20 direction=horizontal<CR>", opts)
+keymap("n", "<C-t>i", ":ToggleTerm size=20 direction=horizontal<CR>", opts)
