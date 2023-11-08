@@ -25,6 +25,11 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+keymap("i", "<C-h>", "<Left>", opts)
+keymap("i", "<C-l>", "<Right>",  opts)
+keymap("i", "<C-j>", "<Down>",  opts)
+keymap("i", "<C-k>", "<Up>",  opts)
+
 vim.keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 vim.keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 vim.keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
@@ -72,7 +77,8 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Neotree
-keymap("n", "<leader>e", ":NvimTreeToggle guibg=NONE ctermbg=NONE<CR>", opts) -- toggle file explorer
+-- keymap("n", "<leader>e", ":NvimTreeToggle guibg=NONE ctermbg=NONE<CR>", opts) -- toggle file explorer
+keymap("n", "<leader>e", ":NvimTreeToggle guibg=NONE<CR>", opts) -- toggle file explorer
 keymap("n", "<leader>o", ":NvimTreeFocus<CR>", opts) -- focus file explorer
 
 -- greatest remap ever
