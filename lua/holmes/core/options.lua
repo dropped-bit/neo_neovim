@@ -32,3 +32,7 @@ vim.opt.updatetime = 50
 -- disable netrw at the very start of your init.lua (strongly advised)
 -- vim.g.loaded_netrw = 1
 -- vim.g.loaded_netrwPlugin = 1
+--
+-- attempt at python provider
+vim.g.loaded_python3_provider = nil
+vim.g.python3_host_prog = "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
