@@ -4,6 +4,12 @@ return {
 	event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
 	config = function()
 		local lint = require("lint")
+		-- This solves many issues with django project linting - i just do not know how to make this specific for django projects
+		local pylint = require("lint").linters.pylint
+		pylint.args = {
+			"--load-plugins pylint_django",
+			"--django-settings-module=storefront.settings",
+		}
 
 		lint.linters_by_ft = {
 			-- javascript = { "eslint_d" },
