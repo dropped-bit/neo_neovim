@@ -9,8 +9,8 @@ return {
 			options = {
 				-- theme = "catppuccin-mocha",
 				theme = "onedark",
-				-- section_separators = { left = '', right = '' },
-				-- component_separators = { left = '', right = '' },
+				section_separators = { left = " ", right = " " },
+				component_separators = { left = " ", right = " " },
 				disabled_filetypes = { "" },
 				globalstatus = true,
 			},
