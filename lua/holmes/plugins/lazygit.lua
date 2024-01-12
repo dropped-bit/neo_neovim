@@ -2,11 +2,11 @@ return {
 	"kdheepak/lazygit.nvim",
 	-- optional for floating window border decoration
 	dependencies = {
+		"nvim-telescope/telescope.nvim",
 		"nvim-lua/plenary.nvim",
 	},
-	-- config = function()
-	-- 	local lazygit = require("lazygit")
-	--
-	-- 	lazygit.setup({})
-	-- end,
+	config = function()
+		require("telescope").load_extension("lazygit")
+		vim.keymap.set("n", "<leader>lg", "<cmd>LazyGit<cr>", { desc = "Open LazyGit " })
+	end,
 }
