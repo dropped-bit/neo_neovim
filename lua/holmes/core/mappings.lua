@@ -88,4 +88,4 @@ vim.keymap.set("x", "<leader>p", '"_dP')
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- toggleterm launch
-keymap("n", "<C-t>i", ":ToggleTerm size=20 direction=horizontal<CR>", opts)
+-- keymap("n", "<C-t>i", ":ToggleTerm size=20 direction=horizontal<CR>", opts)
