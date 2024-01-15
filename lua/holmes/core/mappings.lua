@@ -77,8 +77,8 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Neotree
-keymap("n", "<leader>e", ":NvimTreeToggle guibg=NONE ctermbg=NONE<CR>", opts) -- toggle file explorer
-keymap("n", "<leader>o", ":NvimTreeFocus<CR>", opts) -- focus file explorer
+keymap("n", "<leader>ee", ":NvimTreeToggle guibg=NONE ctermbg=NONE<CR>", opts) -- toggle file explorer
+keymap("n", "<leader>ef", ":NvimTreeFocus<CR>", opts) -- focus file explorer
 
 -- Improve copy & pasting to system clipboard
 keymap("v", "<leader>yc", '"+y', opts) -- copy systemclipboard
