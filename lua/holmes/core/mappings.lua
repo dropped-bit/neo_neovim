@@ -80,6 +80,9 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle guibg=NONE ctermbg=NONE<CR>", opts) -- toggle file explorer
 keymap("n", "<leader>o", ":NvimTreeFocus<CR>", opts) -- focus file explorer
 
+-- Improve copy & pasting to system clipboard
+keymap("v", "<leader>yc", '"+y', opts) -- copy systemclipboard
+keymap("n", "<leader>yp", '"+p', opts) -- paste systemclipboard
 -- greatest remap ever
 keymap("v", "p", '"_dP', opts) -- not sure of exact difference with <leader>p
 vim.keymap.set("x", "<leader>p", '"_dP')
