@@ -11,7 +11,7 @@ return {
 			-- 	sorter = "case_sensitive",
 			-- },
 			view = {
-				width = 55,
+				width = vim.o.columns,
 			},
 			-- renderer = {
 			-- 	group_empty = true,
